@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body id="body">
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav-links">
+          <!-- mobile navbar -->
+          <div class="mobile-sidebar">
+            <div id="menu-btn" class="mobile-sidebar-icon">
+              <img src="./images/icon-menu.svg" alt="" />
+            </div>
+            <div class="sidebar-wrapper">
+              <span id="close" class="close-container">
+                <img src="./images/icon-close.svg" alt="close" />
+              </span>
+              <ul class="sidebar-items">
+                <li class="sidebar-item"><a>Collections</a></li>
+                <li class="sidebar-item"><a>Men</a></li>
+                <li class="sidebar-item"><a>Women</a></li>
+                <li class="sidebar-item"><a>About</a></li>
+                <li class="sidebar-item"><a>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of mobile navbar -->
+          <div class="nav-logo">
+            <h3>Sneakers</h3>
+          </div>
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#">Collections</a></li>
+            <li class="nav-item"><a href="#">Men</a></li>
+            <li class="nav-item"><a href="#">Women</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-cart-profile">
+          <div class="badge-cart">
+            <span class="cart-item-number">0</span>
+            <i class="cart-icon"
+            ><img src="./images/icon-cart.svg" alt="card" />
+          </i>
+          </div>
+          <!-- dropdown cart -->
+          <div class="cart-dropdown">
+            <div class="dropdown-title">
+              <h4>Cart</h4>
+            </div>
+            <div class="dropdown-items">
+              <p>Your cart is empty</p>
+            </div>
+          </div>
+          <div class="profile-wrapper">
+            <img
+              class="nav-avatar"
+              src="./images/image-avatar.png"
+              alt="avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+    <!-- product section -->
+    <section class="p-section">
+      <div class="product-wrapper">
+        <div class="left">
+          <div class="product-image">
+            <div class="large-picture">
+              <img src="./images/image-product-1.jpg" alt="product" />
+            </div>
+            <div class="small-pictures">
+              <img
+                class="sm-pic"
+                src="./images/image-product-1.jpg"
+                alt="product"
+              />
+
+              <img
+                class="sm-pic"
+                src="./images/image-product-2.jpg"
+                alt="product"
+              />
+
+              <img
+                class="sm-pic"
+                src="./images/image-product-3.jpg"
+                alt="product"
+              />
+
+              <img
+                class="sm-pic"
+                src="./images/image-product-4.jpg"
+                alt="product"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="product-desc-wrapper">
+            <div class="des-title">
+              <p class="c-title">SNEAKER COMPANY</p>
+              <h1 class="p-bold-title">Fall Limited Edition Sneakers</h1>
+              <p class="product-description">
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they'll
+                withstand everything the weather can offer
+              </p>
+            </div>
+            <div class="product-price">
+              <div class="price-row">
+                <span class="off-price">$125,00</span>
+                <span class="off-percent"> 50% </span>
+              </div>
+              <span class="main-price">$250,00</span>
+            </div>
+            <div class="addcard">
+              <div class="product-counter">
+                <span class="minus"> - </span>
+                <span class="count-number"> 0 </span>
+                <span class="plus"> + </span>
+              </div>
+              <div class="btn-container">
+                <button id="addtocart" class="addto-btn">
+                  <img
+                    class="cart-icon-btn"
+                    src="./images/white-shopping-cart-icon-png-19.jpg"
+                    alt="card"
+                  />Add / remove
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/index.js"></script>
+  </body>
+</html>
